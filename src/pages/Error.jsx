@@ -6,33 +6,30 @@ import Jumbotron from '../components/Jumbotron.jsx';
 class Home extends Component {
   render() {
     return (
-      <div id="demo" class="carousel slide" data-ride="carousel">
-
-        <ul class="carousel-indicators">
-          <li data-target="#demo" data-slide-to="0" class="active"></li>
-          <li data-target="#demo" data-slide-to="1"></li>
-          <li data-target="#demo" data-slide-to="2"></li>
-        </ul>
-        
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src={require("./la.jpg")} alt="Los Angeles" width="1100" height="500"/>
-          </div>
-          <div class="carousel-item">
-            <img src={require("./chicago.jpg")} alt="Chicago" width="1100" height="500"/>
-          </div>
-          <div class="carousel-item">
-            <img src={require("./ny.jpg")} alt="New York" width="1100" height="500"/>
-          </div>
+          <div id="carouselExampleControls" className="carousel slide" data-ride="carousel">
+      <div className="carousel-inner">
+        <div className="carousel-item active">
+          <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(45).jpg"
+            alt="First slide"/>
         </div>
-        
-        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-          <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#demo" data-slide="next">
-          <span class="carousel-control-next-icon"></span>
-        </a>
+        <div className="carousel-item">
+          <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(46).jpg"
+            alt="Second slide"/>
+        </div>
+        <div className="carousel-item">
+          <img className="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(47).jpg"
+            alt="Third slide"/>
+        </div>
       </div>
+      <a className="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span className="sr-only">Previous</span>
+      </a>
+      <a className="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+        <span className="sr-only">Next</span>
+      </a>
+    </div>
     );
   }
 }
