@@ -1,0 +1,173 @@
+.timeline {
+  width: 100%;
+  height: auto;
+  margin: 150px 0;
+  position: relative;
+}
+.timeline .line {
+  width: 5px;
+  height: 1800px;
+  min-height: 250px;
+  background: #393939;
+  margin: 25px auto;
+  left: 50%;
+  right: 50%;
+  z-index: 1;
+  position: absolute;
+}
+.timeline .start {
+  font-size: 32px;
+  position: absolute;
+  top: -45px;
+  left: -35px;
+}
+.timeline .end {
+  font-size: 32px;
+  position: absolute;
+  bottom: -45px;
+  left: -35px;
+}
+.timeline .event {
+  width: 38%;
+  height: 200px;
+  text-align: center;
+  box-shadow: 0 0.01em 0.01em #000;
+  margin: 50px 0 0 5%;
+  padding: 25px;
+  background: #fff;
+  z-index: 2;
+  float: left;
+  box-sizing: border-box;
+  position: relative;
+}
+.timeline .event:before {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 75px;
+  right: -28px;
+  border-style: solid;
+  border-width: 25px 0 25px 28px;
+  border-color: transparent transparent transparent #fff;
+  z-index: 4;
+}
+.timeline .event:after {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 74px;
+  right: -30px;
+  border-style: solid;
+  border-width: 26px 0 26px 30px;
+  border-color: transparent transparent transparent #aeaeae;
+  z-index: 3;
+}
+.timeline .event .icon {
+  position: absolute;
+  right: -20px;
+  top: -20px;
+  height: 50px;
+  width: 50px;
+  background: #393939;
+  border-radius: 50%;
+  z-index: 3;
+}
+.timeline .event .icon img {
+  max-width: 60%;
+  height: auto;
+  margin: 20%;
+  filter: invert(100%);
+}
+.timeline .event .date {
+  font-weight: 700;
+  font-size: 2rem;
+}
+.timeline .event .details {
+  font-weight: 400;
+  font-size: 1rem;
+  margin: 20px 0;
+  padding: 0;
+}
+.timeline .event:nth-of-type(odd) {
+  float: right;
+  margin: 90px 5% 0 0;
+}
+.timeline .event:nth-of-type(odd) .icon {
+  left: -20px;
+}
+.timeline .event:nth-of-type(odd):before {
+  left: -28px;
+  border-width: 25px 28px 25px 0;
+  border-color: transparent #fff transparent transparent;
+}
+.timeline .event:nth-of-type(odd):after {
+  left: -30px;
+  border-style: solid;
+  border-width: 26px 30px 26px 0;
+  border-color: transparent #aeaeae transparent transparent;
+}
+@media (max-width: 768px) {
+  .timeline .event {
+    float: right;
+    width: 60%;
+    min-width: 300px;
+    margin: 10% 10% 0 0;
+  }
+  .timeline .event:before {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 75px;
+    left: -28px;
+    width: 0;
+    border-style: solid;
+    border-width: 25px 28px 25px 0;
+    border-color: transparent #fff transparent transparent;
+  }
+  .timeline .event:after {
+    left: -30px;
+    border-style: solid;
+    border-width: 26px 30px 26px 0;
+    border-color: transparent #aeaeae transparent transparent;
+  }
+  .timeline .event .icon {
+    left: -20px;
+  }
+  .timeline .event:nth-of-type(odd) {
+    margin: 10% 10% 0 0;
+  }
+  .timeline .line {
+    height: 3200px;
+    left: -20px;
+  }
+}
+@media (max-width: 575px) {
+  .timeline {
+    padding: 100px 0 0 0;
+    margin: 0 0 150px 0;
+  }
+  .timeline .event, .timeline .event:nth-of-type(odd) {
+    float: none;
+    margin: 15% auto;
+  }
+  .timeline .line {
+    left: 50%;
+    height: 3050px;
+  }
+  .timeline .event:before, .timeline .event:nth-of-type(odd):before, .timeline .event:after, .timeline .event:nth-of-type(odd):after {
+    display: none;
+  }
+  .timeline .event .icon, .timeline .event:nth-of-type(odd) .icon {
+    left: 128px;
+  }
+  .timeline .event .date {
+    margin: 25px 0 0 0;
+  }
+}
+/* TODO Add utility class to stylesheet*/
+.center {
+  text-align: center;
+}
