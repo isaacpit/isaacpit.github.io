@@ -1,0 +1,80 @@
+.avi-circle {
+  border-radius: 50%;
+  max-height: 90vh;
+  padding: 10px;
+}
+.bio-container {
+  /* height: 100vh; */
+  background-color: rgb(156, 236, 250);
+}
+.bio-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-evenly;
+  
+  /* max-height: 1600px; */
+  height: 90vh;
+  
+}
+.bio-header {
+  height: 10vh;
+}
+.avi-container {
+  /* padding: 20px; */
+} 
+
+a {
+  font-family: "Bookman Old Style";
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Bookman Old Style";
+  font-weight: 400;
+  padding: 20px 0;
+  margin: 0px;
+}
+
+.bio-header > h4 {
+  margin: 0px;
+}
+
+p {
+  font-size: 1em;
+  font-family: "Bookman Old Style";
+}
+
+@media screen and (max-width: 768px) {
+  .bio-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin: 20px;
+    /* justify-content: space-evenly; */
+    
+    
+    /* max-height: 1600px; */
+    /* height: 90vh; */
+    
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .avi-container {
+    /* flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin: 20px; */
+    /* justify-content: space-evenly; */
+    width: 90%;
+    
+    /* max-height: 1600px; */
+    /* height: 90vh; */
+    
+  }
+}

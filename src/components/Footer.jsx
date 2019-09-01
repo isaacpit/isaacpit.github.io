@@ -4,7 +4,7 @@ import './Footer.css';
 class Footer extends Component {
   render() {
     return (
-      <footer className="footer">
+      <footer className="footer bg-light">
         <div className="container">
           <span className="text-muted">My Website &#169; {new Date().getFullYear()}</span>
         </div>
