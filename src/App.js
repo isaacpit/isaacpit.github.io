@@ -43,7 +43,7 @@ class App extends Component {
       <Router>
         <Switch>
           {/* <Route exact path="/" component={Portfolio}/> */}
-          <Route exact path="/" render={(props) => <Portfolio {...props} id="first" data={data}/>}/>
+          {/* <Route exact path="/" render={(props) => <Portfolio {...props} id="first" data={data}/>}/> */}
           <Route path="/old" component={Home}/>
           <Route path="/about" component={About}/>
           <Route path="/contact" component={Contact}/>
