@@ -26,16 +26,60 @@ import CarouselOverlayGeneral from './components/CarouselOverlayGeneral';
 
 
 const data = { 
-  images: [
-    { id: 1, src: require('./images/la.jpg'), title: 'foo', description: 'bar' },
-    { id: 2, src: require('./images/la.jpg'), title: 'foo', description: 'bar' },
-    { id: 3, src: require('./images/la.jpg'), title: 'foo', description: 'bar' },
-    { id: 4, src: require('./images/la.jpg'), title: 'foo', description: 'bar' },
-    { id: 5, src: require('./images/la.jpg'), title: 'foo', description: 'bar' },
-  ],
-  title: "some title",
-  desc: "some description"
+  colors: {
+    blue: "#D1F3F9",
+    yellow: "#FFFDBC",
+    purple:  "#E8EDFF",
+    brown: "#F2DFD7",
+    pink: "#FEF9FF",
+    white: "#ffffff",
+    blueAccent: "#ACC7CC",
+    yellowAccent: "#FFF696",
+    purpleAccent:  "#C1D1FF",
+    brownAccent: "#FFCDBA",
+    pinkAccent: "#EED3FF",
+    whiteAccent: "#555555",
+  },
+  data1: {
+    images: [
+      { id: 1, src: require('./images/warseas1.png'), title: 'foo', description: 'bar' },
+      { id: 2, src: require('./images/warseas2.png'), title: 'foo', description: 'bar' },
+      { id: 3, src: require('./images/warseas3.png'), title: 'foo', description: 'bar' },
+    ],
+    title: "War of the Seas",
+    desc: "Developed a multiplayer network Battleship-like game complete with movement and special attacks to spice things up.",
+    id: "carousel-1",
+    footer: "Created fall 2018",
+    bgColor: "#aaa",
+  },
+  data2: {
+    images: [
+      { id: 1, src: require('./images/amex1.png'), title: 'foo', description: 'bar' },
+      { id: 2, src: require('./images/amex2.png'), title: 'foo', description: 'bar' },
+      { id: 3, src: require('./images/amex5.png'), title: 'foo', description: 'bar' },
+    ],
+    title: "Colleague Benefits Locator",
+    desc: "Developed during 24 hour hackathon at American Express. Lead team to create an Android application which displayed local discounts. ",
+    id: "carousel-2",
+    footer: "Created summer 2019",
+  },
+  data3: {
+    images: [
+      { id: 1, src: require('./images/vr-piano10.png'), title: 'foo', description: 'bar' },
+      { id: 2, src: require('./images/vr-piano9.png'), title: 'foo', description: 'bar' },
+      { id: 3, src: require('./images/vr-piano8.png'), title: 'foo', description: 'bar' },
+      { id: 4, src: require('./images/vr-piano5.png'), title: 'foo', description: 'bar' },
+      { id: 5, src: require('./images/vr-piano4.png'), title: 'foo', description: 'bar' },
+      { id: 6, src: require('./images/vr-piano2.png'), title: 'foo', description: 'bar' },
+      
+    ],
+    title: "Chord Wars",
+    desc: "Created a space-themed virtual reality video game based on learning music theory. Aliens representing major, minor, and diminished chords fly at the player and the player must rock out to defeat the aliens.",
+    id: "carousel-3",
+    footer: "Created spring 2019",
+  }
 }
+  
 
 class App extends Component {
   render() {
@@ -43,7 +87,7 @@ class App extends Component {
       <Router>
         <Switch>
           {/* <Route exact path="/" component={Portfolio}/> */}
-          {/* <Route exact path="/" render={(props) => <Portfolio {...props} id="first" data={data}/>}/> */}
+          <Route exact path="/" render={(props) => <Portfolio {...props} id="first" data={data}/>}/>
           <Route path="/old" component={Home}/>
           <Route path="/about" component={About}/>
           <Route path="/contact" component={Contact}/>
@@ -60,7 +104,7 @@ class App extends Component {
           <Route path="/timelinevertical2" component={TimelineVertical2}/>
           <Route path="/bootstrapsite" component={BootstrapSite}/>
           <Route path="/halfs" component={HalfCol}/>
-          <Route path="/carouseloverlaygeneral" render={(props) => <CarouselOverlayGeneral {...props} id="first" data={data} />}/>
+          <Route path="/carouseloverlaygeneral" render={(props) => <CarouselOverlayGeneral {...props} id="first" data={data.data2} />}/>
           
           <Route component={Error}/>
         </Switch>

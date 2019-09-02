@@ -1,0 +1,22 @@
+.card {
+  width: 100%;
+}
+.w3-container {
+  width: 100%;
+  /* padding: 0; */
+
+}
+
+div.card-deck {
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  align-content: center;
+}
+.card-footer {
+  /* border-bottom: 1px;
+  border-top: 0; */
+  border-radius: calc(.25rem - 1px) calc(.25rem - 1px) 0 0 ;
+  border-bottom: 1px solid rgba(0,0,0,.125);
+  border-top: 0px;
+}

@@ -13,10 +13,10 @@ export default class TimelineVertical2 extends Component {
   render() {
   return (
     <div>
-      <div>
+      <div >
         
         <div className="container">
-          <h4>Experience</h4>
+          <h4>Experience Timeline</h4>
           <div className="row">
             <div className="col-md-12">
               <div className="main-timeline4">
@@ -68,7 +68,6 @@ export default class TimelineVertical2 extends Component {
             </div>
           </div>
         </div>
-        <hr/>
       </div>
     </div>
   )

@@ -19,14 +19,14 @@ export default class Portfolio extends Component {
       <div>
         <div className="block1"> 
           <NavbarAlt/>
-          <Bio id="Bio"/>
+          <Bio id="Bio" bgColor={this.props.data.colors.blue}/>
         </div>
-        <TimelineVertical2/>
+        {/* <TimelineVertical2/> */}
 
-        <HalfCol id="Focus">
+        <HalfCol bgColor={this.props.data.colors.yellow} cardColor={this.props.data.colors.white} id="Focus">
 
         </HalfCol>
-        <PortfolioContainer data={this.props.data}/>
+        <PortfolioContainer data={this.props.data} id={this.props.id}/>
         
         <Footer/>
 

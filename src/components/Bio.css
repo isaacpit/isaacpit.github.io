@@ -5,7 +5,6 @@
 }
 .bio-container {
   /* height: 100vh; */
-  background-color: rgb(156, 236, 250);
 }
 .bio-content {
   flex: 1;
@@ -16,11 +15,11 @@
   justify-content: space-evenly;
   
   /* max-height: 1600px; */
-  height: 90vh;
+  min-height: 90vh;
   
 }
 .bio-header {
-  height: 10vh;
+  min-height: 10vh;
 }
 .avi-container {
   /* padding: 20px; */

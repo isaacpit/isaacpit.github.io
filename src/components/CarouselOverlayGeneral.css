@@ -3,5 +3,28 @@
   /* justify-content: center;
   align-items: center; */
   /* width: 50%; */
+  padding: 16px;
+  /* flex: 4 1 auto; */
 
+}
+div.container {
+  /* display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center; */
+}
+.carousel-inner > .carousel-item {
+  /* background-color: #f0f0f0; */
+  margin: 1 auto;
+  padding: 4px;
+
+}
+
+.carousel-item {
+  text-align: center;
+}
+
+.carousel-item img {
+  display: block;
+  margin: auto;
 }
