@@ -11,9 +11,9 @@ export default class ThirdsCol extends Component {
         <div className="w3-row-padding w3-center w3-margin-top">
         <div className="w3-half">
           <div className="w3-card w3-container w3-padding-16	" style={{minHeight:"460px"}}>
-          <h3>Responsive</h3><br/>
+          <h3>Tony</h3><br/>
           <i className="fa fa-desktop w3-margin-bottom w3-text-theme" style={{fontSize:"120px"}}></i>
-          <p>Built-in responsiveness</p>
+          <p>Gang only</p>
           <p>Mobile first fluid grid</p>
           <p>Fits any screen sizes</p>
           <p>PC Tablet and Mobile</p>

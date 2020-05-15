@@ -16,44 +16,55 @@ export default class TimelineVertical2 extends Component {
       <div >
         
         <div className="container">
-          <h4>Experience Timeline</h4>
+          <h4 style={{marginBottom: "0px"}}>Experience Timeline</h4>
           <div className="row">
             <div className="col-md-12">
               <div className="main-timeline4">
                 <div className="timeline">
                   <a href="#" className="timeline-content">
-                    <span className="year">2018</span>
+                    {/* <span className="year">2019 <img src={require("./../images/amexlogo.png")} width="100px"></img></span> */}
+
+                    <img id="amexlogo" className="year" src={require("./../images/amexlogo.png")}></img>
+                    <h3 id="yearamex">2019 Summer</h3> 
+                    
                     <div className="inner-content">
-                      <h3 className="title">Web Designer</h3>
+                      <h3 className="title">Software Engineer Intern</h3>
                       <p className="description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ex odio, rhoncus sit amet tincidunt eu, suscipit a orci. In suscipit quam eget dui auctor.
+                        Developed full stack Android application for testing the American Express SafeKey® security solution. Collaborated on agile team to move American Express SafeKey® application from db2 database to Couchbase.
+
                       </p>
                     </div>
                   </a>
                 </div>
                 <div className="timeline">
                   <a href="#" className="timeline-content">
-                    <span className="year">2017</span>
+                    {/* <span className="year">2017  <a><img src="http://seekvectorlogo.com/wp-content/uploads/2018/01/kinder-morgan-vector-logo.png" width="100px"/></a></span> */}
+                    <img id="kmlogo" className="year" src="http://seekvectorlogo.com/wp-content/uploads/2018/01/kinder-morgan-vector-logo.png"></img>
+                    <h3 id="yearkm">2018 Summer</h3>
+
                     <div className="inner-content">
-                      <h3 className="title">Web Developer</h3>
+                      <h3 className="title">Application Development Intern</h3>
                       <p className="description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ex odio, rhoncus sit amet tincidunt eu, suscipit a orci. In suscipit quam eget dui auctor.
+                        Developed a full stack .NET application to enhance and expedite code migration process. Worked with end-users to improve and replace current processes regarding development pipeline.
+
                       </p>
                     </div>
                   </a>
                 </div>
                 <div className="timeline">
                   <a href="#" className="timeline-content">
-                    <span className="year">2016</span>
+                    <img id="tamulogo" className="year" src={require("./../images/tamulogo.png")}></img>
+                  
+                    <h3 id="yeartamu">2018 Spring</h3>
                     <div className="inner-content">
-                      <h3 className="title">Web Designer</h3>
+                      <h3 className="title">Peer Teacher</h3>
                       <p className="description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras ex odio, rhoncus sit amet tincidunt eu, suscipit a orci. In suscipit quam eget dui auctor.
+                        Aid students’ understanding in upper to lower level courses in C++, Python, and Computer Systems.
                       </p>
                     </div>
                   </a>
                 </div>
-                <div className="timeline">
+                {/* <div className="timeline">
                   <a href="#" className="timeline-content">
                     <span className="year">2015</span>
                     <div className="inner-content">
@@ -63,7 +74,7 @@ export default class TimelineVertical2 extends Component {
                       </p>
                     </div>
                   </a>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

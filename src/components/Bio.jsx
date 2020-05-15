@@ -10,8 +10,8 @@ export default class Bio extends Component {
   render() {
     return(
       <div className="bio-container" style={{backgroundColor: this.props.bgColor}}>
-        <div className="bio-header">
-          <h4>About me</h4>
+        <div style={{backgroundColor: "white"}} className="d-flex justify-content-center">
+          <h3>About me</h3>
         </div>
         <div className="bio-content" >
           <div className="w3-third avi-container" >
@@ -22,6 +22,13 @@ export default class Bio extends Component {
             <h1>Howdy, my name is Isaac Pitblado</h1>
             <p style={{fontSize: "1.25em"}}>
               I am a student at Texas A&M University studying Computer Science with minors in Game Development and Cyber Security.
+            </p>
+            <p style={{fontSize: "1.25em"}}>
+              I am also a peer teacher at Texas A&M University for the Computer Systems course. In my free time, I enjoy playing basketball.
+            </p>
+            <p style={{fontSize: "1.25em"}}>
+              My notable work experience is a software engineer internship with American Express
+              and an application development internship with Kinder Morgan.
             </p>
           </div>
         </div>
