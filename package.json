@@ -1,5 +1,6 @@
 {
   "name": "simple-react-router-website",
+  "homepage": "https://isaacpit.github.io/portfolio-web/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
