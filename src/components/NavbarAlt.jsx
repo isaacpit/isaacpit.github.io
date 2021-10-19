@@ -17,7 +17,7 @@ class NavbarAlt extends Component {
             <a className="nav-link" href="#Bio">Bio <span className="sr-only">(current)</span></a>
           </li> */}
           <li className="nav-item">
-            <a className="nav-link" href="#Timeline">Experience</a>
+            <a className="nav-link" href="#SimpleTimeline">Experience</a>
           </li>
           {/* DON'T DELETE */}
           {/* <li className="nav-item dropdown">

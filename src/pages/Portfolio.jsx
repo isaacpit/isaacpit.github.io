@@ -24,7 +24,7 @@ export default class Portfolio extends Component {
         </div>
         
 
-        <TimelineSimple bgColor={this.props.data.colors.purple2} cardColor={this.props.data.colors.white} id="Timeline"/>
+        <TimelineSimple bgColor={this.props.data.colors.purple2} cardColor={this.props.data.colors.white} id="SimpleTimeline"/>
         <PortfolioContainer cardColor={this.props.data.colors.white} data={this.props.data} id={this.props.id}/>
 
         {/* <HalfCol bgColor={this.props.data.colors.yellow} cardColor={this.props.data.colors.white} id="Focus"/> */}
