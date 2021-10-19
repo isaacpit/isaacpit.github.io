@@ -20,6 +20,8 @@ class PortfolioItem extends Component{
     console.log('data: ');console.log(this.props);
     console.log('images: ');console.log(this.props.data.images);
     var images = this.props.data.images;
+
+    // custom hack job for double carousel
     if (this.props.data.images_desktop != null) {
       // var desktop_data = this.props.data;
       var copied_desktop_data = JSON.parse(JSON.stringify(this.props.data));
@@ -28,10 +30,7 @@ class PortfolioItem extends Component{
         data_desktop: copied_desktop_data
       }
     }
-    console.log('PortfolioContainer: ');console.log(this.state);
-    console.log('data after: ');console.log(this.props);
-    console.log('state after: ');console.log(this.state);
-    console.log('images after: ');console.log(this.props.data.images);
+
 
   }
   render() {
@@ -39,6 +38,7 @@ class PortfolioItem extends Component{
       <div className="card-deck w3-padding-16 " style={{backgroundColor: this.props.colorBg}} >
           <div className="card border-0" style={{backgroundColor: this.props.colorBg}}>
             <CarouselOverlayGeneral cardColor={this.props.cardColor} colorAccent={this.props.colorAccent} height={this.props.height} width={this.props.width} id={this.props.id} data={this.props.data} desktopWidth={this.props.desktopWidth} desktopHeight={this.props.desktopHeight}/>
+            {/* secondary carousel if data is supplied */}
             {
               this.props.data.images_desktop != null && <CarouselOverlayGeneral cardColor={this.props.cardColor} colorAccent={this.props.colorAccent} height={this.props.height} width={this.props.width} id={this.props.data.desktop_id} data={this.state.data_desktop} desktopWidth={this.props.desktopWidth} desktopHeight={this.props.desktopHeight}/>
             }
@@ -151,11 +151,11 @@ export default class PortfolioContainer extends Component {
         </div>
         
       
-      <PortfolioItem cardColor={this.props.data.colors.white} colorAccent={this.props.data.colors.blueAccent} colorBg={this.props.data.colors.blue} data={this.props.data.dataCompetitiveQuizzer} id={this.props.data.dataCompetitiveQuizzer.id} repoImg={this.props.data.repoImg} width="auto" height="450px"/>
-      <PortfolioItem cardColor={this.props.data.colors.white} colorAccent={this.props.data.colors.purpleAccent} colorBg={this.props.data.colors.purple} data={this.props.data.dataRazaWebsite} id={this.props.data.dataRazaWebsite.id} repoImg={this.props.data.repoImg} width="auto" height="450px" desktopWidth="90%" desktopHeight="auto"/>
-      <PortfolioItem cardColor={this.props.data.colors.white} colorAccent={this.props.data.colors.pinkAccent} colorBg={this.props.data.colors.pink} data={this.props.data.dataBenefits} id={this.props.data.dataBenefits.id} repoImg={this.props.data.repoImg} width="auto" height="450px"/>
-      <PortfolioItem cardColor={this.props.data.colors.white} colorAccent={this.props.data.colors.grey} colorBg={this.props.data.colors.greyAccent} data={this.props.data.dataVrpiano} id={this.props.data.dataVrpiano.id} repoImg={this.props.data.repoImg} width="100%" height="auto"/>
-      <PortfolioItem cardColor={this.props.data.colors.white} colorAccent={this.props.data.colors.pinkAccent} colorBg={this.props.data.colors.pink} data={this.props.data.dataWarseas} id={this.props.data.dataWarseas.id} repoImg={this.props.data.repoImg} width="100%" height="auto"/>
+      <PortfolioItem cardColor={this.props.data.colors.white} colorAccent={this.props.data.colors.purpleAccent} colorBg={this.props.data.colors.purple3} data={this.props.data.dataCompetitiveQuizzer} id={this.props.data.dataCompetitiveQuizzer.id} repoImg={this.props.data.repoImg} width="auto" height="450px"/>
+      <PortfolioItem cardColor={this.props.data.colors.white} colorAccent={this.props.data.colors.purpleAccent} colorBg={this.props.data.colors.purple4} data={this.props.data.dataRazaWebsite} id={this.props.data.dataRazaWebsite.id} repoImg={this.props.data.repoImg} width="auto" height="450px" desktopWidth="90%" desktopHeight="auto"/>
+      <PortfolioItem cardColor={this.props.data.colors.white} colorAccent={this.props.data.colors.purpleAccent} colorBg={this.props.data.colors.purple3} data={this.props.data.dataBenefits} id={this.props.data.dataBenefits.id} repoImg={this.props.data.repoImg} width="auto" height="450px"/>
+      <PortfolioItem cardColor={this.props.data.colors.white} colorAccent={this.props.data.colors.purpleAccent} colorBg={this.props.data.colors.purple2} data={this.props.data.dataVrpiano} id={this.props.data.dataVrpiano.id} repoImg={this.props.data.repoImg} width="100%" height="auto"/>
+      <PortfolioItem cardColor={this.props.data.colors.white} colorAccent={this.props.data.colors.purpleAccent} colorBg={this.props.data.colors.purple} data={this.props.data.dataWarseas} id={this.props.data.dataWarseas.id} repoImg={this.props.data.repoImg} width="100%" height="auto"/>
 
       
       

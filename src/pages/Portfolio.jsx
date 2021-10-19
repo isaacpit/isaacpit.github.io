@@ -20,11 +20,11 @@ export default class Portfolio extends Component {
       <div>
         <div className="block1"> 
           <NavbarAlt/>
-          <Bio id="Bio" bgColor={this.props.data.colors.blue}/>
+          <Bio id="Bio" bgColor={this.props.data.colors.purple}/>
         </div>
         
 
-        <TimelineSimple bgColor={this.props.data.colors.purple} cardColor={this.props.data.colors.white} id="Timeline"/>
+        <TimelineSimple bgColor={this.props.data.colors.purple2} cardColor={this.props.data.colors.white} id="Timeline"/>
         <PortfolioContainer cardColor={this.props.data.colors.white} data={this.props.data} id={this.props.id}/>
 
         {/* <HalfCol bgColor={this.props.data.colors.yellow} cardColor={this.props.data.colors.white} id="Focus"/> */}

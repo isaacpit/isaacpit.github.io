@@ -28,9 +28,15 @@ import CarouselOverlayGeneral from './components/CarouselOverlayGeneral';
 
 const data = { 
   colors: {
-    blue: "#D1F3F9",
+    blue: "#d7ecfe",
+    anotherBlue: "#e5edff",
     yellow: "#FFFDBC",
-    purple:  "#E8EDFF",
+    red: "#ffd6da",
+    purple:  "#d6deff",
+    purple2: "#dde3ff",
+    purple3: "#e4e9ff",
+    purple4: "#ebeeff",
+    anotherPurple: "#dff6f4",
     brown: "#F2DFD7",
     pink: "#FEF9FF",
     white: "#ffffff",
@@ -68,7 +74,7 @@ const data = {
     This project is intended to be a tool for teachers to be able to supplement their students in learning foundational subjects that require lots of repetition and practice. 
     The application connects any number of users to 'matches' where users synchronously compete to finish a quiz on a given subject. The provided subjects we implemented are multiplication or big-o complexity analysis of code snippets.
     `,
-    desc2: `The project was developed using C# and Unity for the client side. The client connected to a C# .NET server for synchronization amongst clients. The quiz data and profile data are stored in DynamoDB. The profile data is connected to a user's Google OAuth information. All networking communication was accomplished using custom TCP packets.  We simultaneously connected 15 users to a single quiz as a stress test.`,
+    desc2: `The project was developed using C# and Unity for the client side. The client connected to a C# .NET server for synchronization amongst clients. The quiz data and profile data are stored in DynamoDB. The profile data is connected to a user's Google OAuth information. All networking communication was accomplished using custom TCP packets.  We simultaneously connected 15 users to a single quiz as our largest stress test.`,
     id: "carousel-1",
     link: "https://gitlab.com/kishanpa/CompetitiveQuizzer",
     
@@ -106,24 +112,25 @@ const data = {
   },
   dataRazaWebsite: {
 
-    title: "State Representative Candidate's Website",
-    desc: `Created a custom responsive website for Texas House of Representative's candidate Raza Rahman. The frontend of the website was developed using Bootstrap, HTML, and CSS. The website also communicates with a Express.js server to store volunteer sign up information.  The database used to store this volunteer information was MongoDB. The website was intended for easy access to reach voters and recruit volunteers.`,
+    title: "Texas House of Representatives Candidate Web Application",
+    desc: `Created a custom responsive website for Texas House of Representative's candidate Raza Rahman. The frontend of the website was developed using Bootstrap, HTML, and CSS. The website also communicates with a Express.js server to store volunteer sign up information.  The database used to store this volunteer information was MongoDB. The website was intended for easy access to reach voters and recruit volunteers. The website was published on all of Raza Rahman's campaign materials.`,
     id: "carousel-2",
     desktop_id: "carousel-2-1",
     link: "http://razafortexas.com",
     images: [
       { id: 1, src: require('./images/raza_mobile0.png'), title: 'foo', description: "The website's home page on a mobile device. Responsive pages were a requirement." },
       { id: 2, src: require('./images/raza_mobile7.png'), title: 'foo', description: 'The website uses a volunteer form to connect to an Express.js server to store volunteer\'s information.' },
-      { id: 3, src: require('./images/raza_mobile8.png'), title: 'foo', description: 'The footer for social media links and credit to myself.' },
-      { id: 4, src: require('./images/raza_mobile5.png'), title: 'foo', description: 'The shop section which routes to an external shop system' },
+      { id: 4, src: require('./images/raza_mobile5.png'), title: 'foo', description: 'The shop section which routes to an external shop system.' },
       { id: 5, src: require('./images/raza_mobile1.png'), title: 'foo', description: 'The donation section which routes to an external web page.' },
+      { id: 3, src: require('./images/raza_mobile8.png'), title: 'foo', description: 'The footer for social media links and credit to myself.' },
       
     ],
     images_desktop: [
       { id: 6, src: require('./images/raza_desktop_home.png'), title: 'foo', description: 'The website has a fully responsive interface with emphasis on mobile and Desktop versions.', desktop:true, }, 
-      { id: 7, src: require('./images/raza_desktop_donate.png'), title: 'foo', description: 'The desktop version of the donation page', desktop:true },
-      { id: 8, src: require('./images/raza_desktop_shop.png'), title: 'foo', description: 'The desktop version of the shop carousel.', desktop:true },
       { id: 9, src: require('./images/raza_desktop_volunteer.png'), title: 'foo', description: 'The destkop version of the volunteer form.', desktop:true },
+      { id: 8, src: require('./images/raza_desktop_shop.png'), title: 'foo', description: 'The desktop version of the shop carousel.', desktop:true },
+      { id: 7, src: require('./images/raza_desktop_donate.png'), title: 'foo', description: 'The desktop version of the donation page', desktop:true },
+      
     ],
 
     footer: "Created Spring 2020",
@@ -153,9 +160,9 @@ const data = {
   },
   dataWarseas: {
     images: [
-      { id: 1, src: require('./images/warseas1.png'), title: 'foo', description: 'bar' },
-      { id: 2, src: require('./images/warseas2.png'), title: 'foo', description: 'bar' },
-      { id: 3, src: require('./images/warseas3.png'), title: 'foo', description: 'bar' },
+      { id: 1, src: require('./images/warseas1.png'), title: 'foo', description: 'An example ongoing game occurring between two users, the user\'s own ships are on the left board. The user\'s opponent\'s ships are hidden on the right board.' },
+      { id: 2, src: require('./images/warseas2.png'), title: 'foo', description: 'An example freshly started game, no moves have been made yet.' },
+      { id: 3, src: require('./images/warseas3.png'), title: 'foo', description: 'A player moving their ship, highlighted areas are where the player can move.' },
     ],
     title: "War of the Seas",
     desc: "War of the Seas was a collaborative project where our team created a multiplayer network Battleship-like game complete with movement \
@@ -185,12 +192,12 @@ const data = {
   },
   dataBenefits: {
     images: [
-      { id: 1, src: require('./images/amex1.png'), title: 'foo', description: 'bar' },
-      { id: 2, src: require('./images/amex9.png'), title: 'foo', description: 'bar' },
-      { id: 3, src: require('./images/amex5.png'), title: 'foo', description: 'bar' },
-      { id: 4, src: require('./images/amex4.png'), title: 'foo', description: 'bar' },
-      { id: 5, src: require('./images/amex6.png'), title: 'foo', description: 'bar' },
-      { id: 6, src: require('./images/amex10.png'), title: 'foo', description: 'bar' },
+      { id: 1, src: require('./images/amex1.png'), title: 'foo', description: 'Sign in page for our project.' },
+      { id: 2, src: require('./images/amex9.png'), title: 'foo', description: 'Map view where users can manually set their location to find nearby discounts (users can alternatively just use their current location).' },
+      { id: 3, src: require('./images/amex5.png'), title: 'foo', description: 'List view of generated nearby discounts.' },
+      // { id: 4, src: require('./images/amex4.png'), title: 'foo', description: 'bar' },
+      { id: 5, src: require('./images/amex6.png'), title: 'foo', description: 'Verbose view with option to input coordinates instead of dragging to a location.' },
+      { id: 6, src: require('./images/amex10.png'), title: 'foo', description: 'Screenshot taken from a user\'s actual device, the user is able to see their actual location on the screen.' },
     ],
     title: "Colleague Benefits Locator",
     desc: "Developed during 24 hour hackathon at American Express. Led team to create an Android application which displayed local discounts for American Express employees. Utilized React Native and Google Maps for the front end. The discount data was statically gathered using a Python web scraper on an internal American Express tool.",
@@ -222,14 +229,15 @@ const data = {
   },
   dataVrpiano: {
     images: [
-      { id: 1, src: require('./images/vr-piano10.png'), title: 'foo', description: 'bar' },
-      { id: 2, src: require('./images/vr-piano9.png'), title: 'foo', description: 'bar' },
-      { id: 3, src: require('./images/vr-piano8.png'), title: 'foo', description: 'bar' },
-      { id: 4, src: require('./images/vr-piano5.png'), title: 'foo', description: 'bar' },
-      { id: 5, src: require('./images/vr-piano4.png'), title: 'foo', description: 'bar' },
-      { id: 6, src: require('./images/vr-piano2.png'), title: 'foo', description: 'bar' },
-      { id: 7, src: require('./images/vr-piano.png'), title: 'foo', description: 'bar' },
-      { id: 7, src: require('./images/vr-piano1.png'), title: 'foo', description: 'bar' },
+      { id: 2, src: require('./images/vr-piano9.png'), title: 'foo', description: 'The virtual reality piano that users interact with for the entirety of the game along with the controllers to interact with the piano.' },
+      { id: 7, src: require('./images/vr-piano1.png'), title: 'foo', description: 'A player destroying an enemy with a correct chord sequence. ' },
+      { id: 6, src: require('./images/vr-piano2.png'), title: 'foo', description: 'Player in mid combat with enemies swarming them.' },
+      { id: 1, src: require('./images/vr-piano10.png'), title: 'foo', description: 'A view of our wonderful spacecraft cockpit.' },
+      { id: 3, src: require('./images/vr-piano8.png'), title: 'foo', description: 'A sample view of the tutorial.' },
+      { id: 4, src: require('./images/vr-piano5.png'), title: 'foo', description: 'The instructions for the tutorial.' },
+      { id: 5, src: require('./images/vr-piano4.png'), title: 'foo', description: 'A player viewing the game over screen.' },
+      { id: 7, src: require('./images/vr-piano.png'), title: 'foo', description: 'A player\'s view into space.' },
+      
       
     ],
     title: "Chord Wars",
