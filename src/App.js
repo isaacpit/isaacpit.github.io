@@ -270,7 +270,7 @@ const data = {
 class App extends Component {
   render() {
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Switch>
           {/* <Route exact path="/" component={Portfolio}/> */}
           <Route exact path="/" render={(props) => <Portfolio {...props} id="first" data={data}/>}/>
