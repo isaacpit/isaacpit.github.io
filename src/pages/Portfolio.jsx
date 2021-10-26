@@ -18,6 +18,7 @@ export default class Portfolio extends Component {
   render() {
     return (
       <div>
+        <title>Isaac Pitblado's Portfolio</title>
         <div className="block1"> 
           <NavbarAlt/>
           <Bio id="Bio" bgColor={this.props.data.colors.purple}/>

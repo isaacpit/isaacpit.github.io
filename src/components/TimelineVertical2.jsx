@@ -20,6 +20,21 @@ export default class TimelineVertical2 extends Component {
           <div className="row">
             <div className="col-md-12">
               <div className="main-timeline4">
+              <div className="timeline">
+                  <a href="#" className="timeline-content">
+                    {/* <span className="year">2019 <img src={require("./../images/amexlogo.png")} width="100px"></img></span> */}
+
+                    <img id="visalogo" className="year" src={require("./../images/visalogo.jpg")}></img>
+                    <h3 id="yearvisa">October 2020 - Present</h3> 
+                    
+                    <div className="inner-content">
+                      <h3 className="title">Software Engineer</h3>
+                      <p className="description">
+                      Supported a multi-component Java Spring web server application for the Visa Digital Commerce App (VDCA) which provides a scalable and secure white label mobile banking payment app solution. Delivered Jax-RS REST API suites to mobile-application and release-engineering stakeholders. Coupled external team’s payment solutions with internal business logic and SQL tables to enable our backend service’s features
+                      </p>
+                    </div>
+                  </a>
+                </div>
                 <div className="timeline">
                   <a href="#" className="timeline-content">
                     {/* <span className="year">2019 <img src={require("./../images/amexlogo.png")} width="100px"></img></span> */}
