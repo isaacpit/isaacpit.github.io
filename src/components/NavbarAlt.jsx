@@ -16,9 +16,9 @@ class NavbarAlt extends Component {
           {/* <li className="nav-item active">
             <a className="nav-link" href="#Bio">Bio <span className="sr-only">(current)</span></a>
           </li> */}
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <a className="nav-link" href="#SimpleTimeline">Experience</a>
-          </li>
+          </li> */}
           {/* DON'T DELETE */}
           {/* <li className="nav-item dropdown">
             <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -31,9 +31,9 @@ class NavbarAlt extends Component {
               <a className="dropdown-item" href="#">Something else here</a>
             </div>
           </li> */}
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <a className="nav-link" href="#Portfolio">Portfolio</a>
-          </li>
+          </li> */}
           {/* <li className="nav-item">
             <a className="nav-link" href="#Focus">Focuses</a>
           </li> */}
