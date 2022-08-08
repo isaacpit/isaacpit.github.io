@@ -21,7 +21,7 @@ export default class TimelineSimple extends Component {
               <div className="w3-card w3-padding-16	 d-flex flex-column align-items-center justify-content-center	" style={{minHeight:this.cardSize, backgroundColor: this.props.cardColor}}>
                 <img id="visalogo" className="year" src={require("./../images/visalogo.jpg")}></img>
                 <h4 id="yearvisa">October 2020 - Present</h4> 
-                <h3 className="title">Software Engineer Intern</h3>
+                <h3 className="title">Software Engineer</h3>
                 <div className="container">
                   <p className="description">
                   Supported a multi-component Java Spring web server application for the Visa Digital Commerce App (VDCA) which provides a scalable and secure white label mobile banking payment app solution. Delivered Jax-RS REST API suites to mobile-application and release-engineering stakeholders. Coupled external team’s payment solutions with internal business logic and SQL tables to enable our backend service’s features
