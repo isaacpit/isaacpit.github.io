@@ -156,9 +156,6 @@ export default class PortfolioContainer extends Component {
       <PortfolioItem cardColor={this.props.data.colors.white} colorAccent={this.props.data.colors.purpleAccent} colorBg={this.props.data.colors.purple3} data={this.props.data.dataBenefits} id={this.props.data.dataBenefits.id} repoImg={this.props.data.repoImg} width="auto" height="450px"/>
       <PortfolioItem cardColor={this.props.data.colors.white} colorAccent={this.props.data.colors.purpleAccent} colorBg={this.props.data.colors.purple2} data={this.props.data.dataVrpiano} id={this.props.data.dataVrpiano.id} repoImg={this.props.data.repoImg} width="100%" height="auto"/>
       <PortfolioItem cardColor={this.props.data.colors.white} colorAccent={this.props.data.colors.purpleAccent} colorBg={this.props.data.colors.purple} data={this.props.data.dataWarseas} id={this.props.data.dataWarseas.id} repoImg={this.props.data.repoImg} width="100%" height="auto"/>
-
-      
-      
         
       </div>
       

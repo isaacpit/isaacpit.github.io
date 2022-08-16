@@ -8,6 +8,7 @@ import TimelineVertical2 from '../components/TimelineVertical2';
 import CarouselOverlay from '../components/CarouselOverlay';
 import PortfolioContainer from '../components/PortfolioContainer';
 import TimelineSimple from '../components/TimelineSimple';
+import ForFunTimeline from '../components/ForFunTimeline';
 
 export default class Portfolio extends Component {
   constructor(props) {
@@ -27,9 +28,8 @@ export default class Portfolio extends Component {
 
         <TimelineSimple bgColor={this.props.data.colors.purple2} cardColor={this.props.data.colors.white} id="SimpleTimeline"/>
         <PortfolioContainer cardColor={this.props.data.colors.white} data={this.props.data} id={this.props.id}/>
-
-        {/* <HalfCol bgColor={this.props.data.colors.yellow} cardColor={this.props.data.colors.white} id="Focus"/> */}
-        {/* <TimelineVertical2/> */}
+        <ForFunTimeline  bgColor={this.props.data.colors.purple2} cardColor={this.props.data.colors.white} id="ForFunTimeline"/>
+        
         <Footer/>
 
       </div>

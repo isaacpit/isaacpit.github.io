@@ -148,7 +148,7 @@ const data = {
         alt: "HTML"
       },
       {
-        src: "https://img.icons8.com/metro/100/000000/javascript.png",
+        src: "https://img.icons8.com/ios/100/000000/javascript.png",
         alt: "Express.js"
       },
       {

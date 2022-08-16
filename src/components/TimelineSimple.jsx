@@ -17,10 +17,23 @@ export default class TimelineSimple extends Component {
         
         <div className="container d-flex" >
           <div className="w3-row-padding  w3-center w3-margin-top ">
+          <div className="w3-margin-bottom">
+              <div className="w3-card w3-padding-16	 d-flex flex-column align-items-center justify-content-center	" style={{minHeight:this.cardSize, backgroundColor: this.props.cardColor}}>
+                <img id="iaslogo" className="year" style={{width:120}} src={require("./../images/lifePics/ias-logo.jpg")}></img>
+                <h4 id="yearias">March 2022 - Present</h4> 
+                <h3 className="title">Software Engineer</h3>
+                <div className="container">
+                  <p className="description">
+                    Currently, I enhance IAS custom reporting and dashboards for digital advertising metrics, specifically working on partner integrations with walled gardens such as Facebook, Twitter, Youtube, and TikTok. I develop on a Spring Cloud architecture using Java for source code, MySQL and Snowflake for DB queries, and Groovy + Spock + PowerMock + Docker test continers for unit/integration tests.
+                  </p>
+                </div>
+                
+              </div> 
+            </div>
             <div className="w3-margin-bottom">
               <div className="w3-card w3-padding-16	 d-flex flex-column align-items-center justify-content-center	" style={{minHeight:this.cardSize, backgroundColor: this.props.cardColor}}>
                 <img id="visalogo" className="year" src={require("./../images/visalogo.jpg")}></img>
-                <h4 id="yearvisa">October 2020 - Present</h4> 
+                <h4 id="yearvisa">October 2020 - March 2022</h4> 
                 <h3 className="title">Software Engineer</h3>
                 <div className="container">
                   <p className="description">
@@ -42,26 +55,6 @@ export default class TimelineSimple extends Component {
                 
               </div> 
             </div>
-            {/* <div className="w3-third w3-margin-bottom">
-              <div className="w3-card w3-padding-8	 d-flex flex-column align-items-center justify-content-center	" style={{minHeight:"460px", backgroundColor: this.props.cardColor}}>
-                <img id="kmlogo" className="year" src="http://seekvectorlogo.com/wp-content/uploads/2018/01/kinder-morgan-vector-logo.png"></img>
-                <h3 id="yearkm">2018 Summer</h3>
-                <h3 className="title">Application Development Intern</h3>
-                <p className="description">
-                  Developed a full stack .NET application to enhance and expedite code migration process. Worked with end-users to improve and replace current processes regarding development pipeline.
-                </p>
-              </div> 
-            </div> */}
-            {/* <div className="w3-third w3-margin-bottom">
-              <div className="w3-card w3-padding-8	 d-flex flex-column align-items-center justify-content-center	" style={{minHeight:"460px", backgroundColor: this.props.cardColor}}>
-                <img id="tamulogo" className="year" src={require("./../images/amexlogo.png")}  ></img>
-                <h3 id="yeartamu">2018 Spring</h3>
-                <h3 className="title">Peer Teacher</h3>
-                <p className="description">
-                  Aid students’ understanding in upper to lower level courses in C++, Python, and Computer Systems.
-                </p>
-              </div> 
-            </div> */}
             <div className="w3-margin-bottom">
               <div className="w3-card w3-padding-16	 d-flex flex-column align-items-center justify-content-center	" style={{minHeight:this.cardSize, backgroundColor: this.props.cardColor}}>
                 <img id="kmlogo" className="year" src="http://seekvectorlogo.com/wp-content/uploads/2018/01/kinder-morgan-vector-logo.png"></img>
@@ -88,11 +81,7 @@ export default class TimelineSimple extends Component {
                 
               </div> 
             </div>
-           
-                  
-                    
-
-            
+       
             
             
           </div>
