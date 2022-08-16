@@ -6,3 +6,8 @@ a {
   color: green;
   font-weight: 200;
 }
+
+.band-logo {
+  width: 80px;
+  padding-right: 10px;
+}
