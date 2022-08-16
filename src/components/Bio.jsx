@@ -15,20 +15,19 @@ export default class Bio extends Component {
         </div>
         <div className="bio-content" >
           <div className="w3-third avi-container" >
-            <img className="avi-circle img-thumbnail mx-auto d-block" src={require("./../images/me_tamu.jpg")} alt="" />
+            <img id="self-portraint-main" className="avi-circle img-thumbnail mx-auto d-block" src={require("./../images/lifePics/me.jpeg")} alt="Self portrait at band practice" />
           </div>
 
           <div className="w3-third avi-container" >
             <h1>Howdy, my name is Isaac Pitblado</h1>
             <p style={{fontSize: "1.25em"}}>
-              I am a student at Texas A&M University studying Computer Science with minors in Game Development and Cyber Security.
+              I am a Texas A&M University Aggie alum who graduated with a BS in Computer Science with minors in Game Development and Cyber Security.
             </p>
             <p style={{fontSize: "1.25em"}}>
-              I am also a peer teacher at Texas A&M University for the Computer Systems course. In my free time, I enjoy playing basketball.
+              I am a software engineer @ Integral Ad Science developing in a Java Spring Cloud micro service context enhancing and creating various dashboards and custom reporting functions. I have been working fully remotely for 2 years now.
             </p>
             <p style={{fontSize: "1.25em"}}>
-              My notable work experience is a software engineer internship with American Express
-              and an application development internship with Kinder Morgan.
+              My team's emphasis is to increase value add from our integrations with social media partners such as Facebook, Twitter, TikTok, and Youtube in an effort to transform customer needs into direct lines of service into IAS's Signal platform.
             </p>
           </div>
         </div>

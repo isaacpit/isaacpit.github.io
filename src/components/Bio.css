@@ -3,6 +3,13 @@
   max-height: 90vh;
   padding: 10px;
 }
+
+#self-portrait-main {
+  object-fit: cover;
+  width: 200px;
+  height: 200px;
+}
+
 .bio-container {
   /* height: 100vh; */
 }
