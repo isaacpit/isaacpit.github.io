@@ -146,7 +146,7 @@ export default class PortfolioContainer extends Component {
   render() {
     return( 
       <div id="Portfolio"> 
-        <div className="d-flex justify-content-center">
+        <div id="portfolio-header" className="d-flex justify-content-center">
           <h3>Portfolio</h3>
         </div>
         

@@ -9,7 +9,7 @@ const Intro = (props) => {
         <h3 className="title">After Hours</h3>
         <div className="container">
           <p className="description">
-            In my spare time I enjoy playing basketball, jamming with friends (I play the guitar), and lifting weights. I recently formed a band with some close friends and have some demos to share. We are also scheduled for our first show in September of 2022. I also recently achieved a major goal basketball of getting a solid dunk thanks to strength training.
+            In my spare time I enjoy playing basketball, jamming with friends (I play the guitar), and lifting weights. I recently formed a band with some close friends and have some demos to share. We are also scheduled for our first show in September 2022. I also recently achieved a major goal basketball of getting a solid dunk thanks to strength training.
           </p>
         </div>
         
@@ -171,7 +171,7 @@ export default class ForFunTimeline extends Component {
   render() {
     return (
       <div id={this.props.id} style={{backgroundColor: this.props.bgColor}}>
-        <div style={{backgroundColor: "white"}} className="d-flex justify-content-center">
+        <div id="for-fun-header" style={{backgroundColor: "white"}} className="d-flex justify-content-center">
           <h3 id="titleFunExperience">For Fun</h3>
         </div>
         

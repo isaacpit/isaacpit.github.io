@@ -11,7 +11,7 @@ export default class TimelineSimple extends Component {
   render() {
     return (
       <div id={this.props.id} style={{backgroundColor: this.props.bgColor}}>
-        <div style={{backgroundColor: "white"}} className="d-flex justify-content-center">
+        <div id="experience-header" style={{backgroundColor: "white"}} className="d-flex justify-content-center">
           <h3 id="titleExperience">Experience Timeline</h3>
         </div>
         
