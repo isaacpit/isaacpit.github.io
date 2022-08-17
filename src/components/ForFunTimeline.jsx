@@ -40,8 +40,8 @@ export class MrKatTimeline extends Component {
           
           <div className="container">
             <div className="row justify-content-around">
-              <CaptionVid src={require("./../images/lifePics/bastard.mov")} caption="bastard demo [demo]"/>
-              <CaptionVid src={require("./../images/lifePics/redruM.mov")} caption="redrum demo [demo]"/>
+              <CaptionVid src={require("./../images/lifePics/bastard.mov")} caption="bastard [demo]"/>
+              <CaptionVid src={require("./../images/lifePics/redruM.mov")} caption="redrum [demo]"/>
               <CaptionVid src={require("./../images/lifePics/teeth-solo.mov")} caption="teeth remote jam sesh"/>
               <CaptionVid src={require("./../images/lifePics/u-mean-it.mov")} caption="u mean it [demo]"/>
               <CaptionVid src={require("./../images/lifePics/teeth.mov")} caption="teeth duet w/ Kat"/>
