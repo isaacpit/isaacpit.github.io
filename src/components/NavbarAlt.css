@@ -1,13 +1,36 @@
-.navbar-brand {
+/* #navbar-brand {
   color: #333;
+} */
+
+#navbar-brand-name, #link-to-band-page {
+  color: #333;
+  font-size: large;
+  margin: 8px;
 }
 
-a {
-  color: green;
-  font-weight: 200;
+#navbar-brand-name:hover, #link-to-band-page:hover {
+  color: #0056b3;;
+  text-decoration: none;
 }
 
-.band-logo {
+.navbar-link {
+  color: gray;
+  margin: 8px;
+}
+
+.navbar-link:hover {
+  text-decoration: none;
+}
+
+.navbar-brand:hover {
+  text-decoration: none;
+}
+
+#navbar-brand-logo {
   width: 80px;
   padding-right: 10px;
+}
+
+#navbar-brand-logo:hover {
+  color: #3330;
 }
