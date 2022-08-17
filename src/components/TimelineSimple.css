@@ -3,10 +3,34 @@
   margin-bottom: 0px;
 }
 
-#visalogo {
-  width: 120px;
-}
-
 #yearvisa {
   color: rgb(230, 178, 61);
+}
+
+#iaslogo, #visalogo, #kmlogo, #amexlogo, #tamulogo {
+  height: 150px;
+  width: auto;
+  margin: 20px;
+}
+
+.experience-card {
+  width: 400px;
+  padding: 20px;
+  margin: 40px 0px;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  font-size: large;
+}
+
+.experience-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 30px 10px;
 }

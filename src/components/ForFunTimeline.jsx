@@ -7,16 +7,15 @@ const Intro = (props) => {
       <div className="w3-card w3-padding-16	 d-flex flex-column align-items-center justify-content-center	" style={{backgroundColor: props.cardColor}}>
         <img className="title-logo" src={require("./../images/lifePics/aud.jpeg")}></img>
         <h3 className="title">After Hours</h3>
-        <div className="container">
-          <p className="description">
-            In my spare time I enjoy playing basketball, jamming with friends (I play the guitar), and lifting weights. I recently formed a band with some close friends and have some demos to share. We are also scheduled for our first show in September 2022. I also recently achieved a major goal basketball of getting a solid dunk thanks to strength training.
-          </p>
-        </div>
+        <p className="description">
+          In my spare time I enjoy playing basketball, jamming with friends (I play the guitar), and lifting weights. I recently formed a band with some close friends and have some demos to share. We are also scheduled for our first show in September 2022. I also recently achieved a major goal basketball of getting a solid dunk thanks to strength training.
+        </p>
         
       </div> 
     </div>
   );
 }
+
 export class MrKatTimeline extends Component {
   constructor() {
     super();
@@ -34,11 +33,9 @@ export class MrKatTimeline extends Component {
           <img className="title-logo" src={require("./../images/lifePics/mr-kat-logo.jpg")}></img>
           <h3 className="title">Mr. Kat Band</h3>
           {caption && 
-            <div className="container d-flex align-items-center justify-content-center">
-              <p className="description">
-                {caption}
-              </p>
-            </div>
+            <p className="description">
+              {caption}
+            </p>
           }
           
           <div className="container">
@@ -71,19 +68,17 @@ class BasketballTimeline extends Component {
 
     return (
       <div className="w3-margin-bottom">
-        <div className="w3-card w3-padding-16	 d-flex flex-column align-items-center justify-content-center	" style={{backgroundColor: cardColor}}>
+        <div className="w3-card w3-padding-16 d-flex flex-column align-items-center justify-content-center	" style={{backgroundColor: cardColor}}>
           <img width="100px" height="100px" src={"https://img.icons8.com/doodle/200/000000/basketball.png"} alt="basketball"/>
           <h3 className="title">Basketball</h3>
+          <p className="description">
+            Finally figured out how to dunk in basketball nicely recently. It'd been a long time coming considering how long I've played.
+          </p>
           <div className="container">
-            <p className="description">
-              Finally figured out how to dunk in basketball nicely recently. It'd been a long time coming considering how long I've played.
-            </p>
-            <div className="container">
-              <div className="row justify-content-around">
-                <CaptionVid src={require("./../images/lifePics/dunk1.mov")} caption="dunk #1"/>
-                <CaptionVid src={require("./../images/lifePics/dunk2.mov")} caption="dunk #2"/>
-                <CaptionVid src={require("./../images/lifePics/dunk3.mov")} caption="dunk #3"/>
-              </div>
+            <div className="row justify-content-around">
+              <CaptionVid src={require("./../images/lifePics/dunk1.mov")} caption="dunk #1"/>
+              <CaptionVid src={require("./../images/lifePics/dunk2.mov")} caption="dunk #2"/>
+              <CaptionVid src={require("./../images/lifePics/dunk3.mov")} caption="dunk #3"/>
             </div>
           </div>
         </div> 
@@ -109,11 +104,9 @@ class FriendsTimeline extends Component {
         <div className="w3-card w3-padding-16	 d-flex flex-column align-items-center justify-content-center	" style={{backgroundColor: cardColor}}>
           <img width="100px" height="100px" src={"https://img.icons8.com/bubbles/200/000000/camera.png"} alt="camera"/>
           <h3 className="title">Various pictures</h3>
-          <div className="container">
-            <p className="description">
-              Here's some photos with friends and my fiance, Audrey.
-            </p>
-          </div>
+          <p className="description">
+            Here's some photos with friends and my fiance, Audrey.
+          </p>
           <div className="container">
             <div className="row justify-content-around">
               
