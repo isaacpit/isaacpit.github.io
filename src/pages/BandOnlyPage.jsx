@@ -15,7 +15,7 @@ export const BandOnlyPage = ({bgColor, cardColor}) => {
       <div className="w3-card w3-padding-16	 d-flex flex-column align-items-center justify-content-center	" style={{backgroundColor: bgColor}}>
       
         <MrKatTimeline 
-          caption="Mr. Kat Band members: Kat (vocals and guitar), Isaac (guitar), Johnny (drums), Victor (bass)"
+          caption="We are Mr. Kat, a College Station grown band. We are looking to gig in the Austin, San Antonio, College Station, Dallas area. Our band members are: Kat (vocals and guitar), Isaac (guitar), Johnny (drums), and Victor (bass). Here's some of our demos."
           bgColor={bgColor}
           cardColor={cardColor}
         />
