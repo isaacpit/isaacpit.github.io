@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "cfedf3cd6693acbb4dbc",
-    "url": "/static/css/main.ac5a7fa4.chunk.css"
+    "revision": "ea8e7f92095b69b08c5c",
+    "url": "/static/css/main.e22559d0.chunk.css"
   },
   {
-    "revision": "cfedf3cd6693acbb4dbc",
-    "url": "/static/js/main.962bcf60.chunk.js"
+    "revision": "ea8e7f92095b69b08c5c",
+    "url": "/static/js/main.77440344.chunk.js"
   },
   {
     "revision": "42ac5946195a7306e2a5",
@@ -40,8 +40,12 @@ self.__precacheManifest = [
     "url": "/static/media/visalogo.e66d38d0.jpg"
   },
   {
-    "revision": "07bc54fe610c57523760fccc8c13667f",
-    "url": "/static/media/amexlogo.07bc54fe.png"
+    "revision": "1b3b350df76a30bbdfcfeb4981b4247f",
+    "url": "/static/media/amexlogo.1b3b350d.png"
+  },
+  {
+    "revision": "dc93262058d964bb032c47411a882cd6",
+    "url": "/static/media/tamulogo.dc932620.png"
   },
   {
     "revision": "e2f2c8e6c75d45f259985d5159f1b51d",
@@ -284,7 +288,7 @@ self.__precacheManifest = [
     "url": "/static/media/vr-piano.abb54bea.png"
   },
   {
-    "revision": "e981264a717db09bb19f9f2a99419d37",
+    "revision": "af0c21b580f456fd518a85e2a619caa3",
     "url": "/index.html"
   }
 ];
