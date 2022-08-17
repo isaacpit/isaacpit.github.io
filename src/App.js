@@ -21,6 +21,8 @@ import TimelineVertical2 from './components/TimelineVertical2';
 import BootstrapSite from './components/bs_site/BootstrapSite';
 import HalfCol from './components/HalfCol';
 import CarouselOverlayGeneral from './components/CarouselOverlayGeneral';
+import { MrKatTimeline } from './components/ForFunTimeline';
+import { BandOnlyPage } from './pages/BandOnlyPage';
 // import Data from './../constants/data';
 
 
@@ -276,6 +278,14 @@ class App extends Component {
           {/* LIVE */}
           <Route exact path="/" render={(props) => <Portfolio {...props} id="first" data={data}/>}/>
           <Route exact path="/portfolio-web" render={(props) => <Portfolio {...props} id="first" data={data}/>}/>
+          <Route exact path="/mr-kat" 
+            render={(props) => 
+              <BandOnlyPage
+                bgColor={data.colors.purple2}
+                cardColor={data.colors.white}
+              />  
+            }
+          />
           {/* NOT AS LIVE */}
           <Route path="/old" component={Home}/>
           <Route path="/about" component={About}/>

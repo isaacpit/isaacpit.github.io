@@ -5,8 +5,8 @@ import './Bio.css';
 export default class Bio extends Component {
   constructor(props) {
     super(props);
-
   }
+  
   render() {
     return(
       <div className="bio-container" style={{backgroundColor: this.props.bgColor}}>

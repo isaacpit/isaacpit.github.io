@@ -8,6 +8,10 @@
   font-size: medium;
 }
 
+.caption-vid-container, .caption-img-container {
+  margin: 20px;
+}
+
 .title-logo {
   width: 200px;
 }
