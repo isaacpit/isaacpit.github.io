@@ -6,16 +6,16 @@ export default class Bio extends Component {
   constructor(props) {
     super(props);
   }
-  
+
   render() {
     return(
       <div className="bio-container" style={{backgroundColor: this.props.bgColor}}>
-        <div style={{backgroundColor: "white"}} className="d-flex justify-content-center">
+        <div id="about-me-header" style={{backgroundColor: "white"}} className="d-flex justify-content-center">
           <h3>About me</h3>
         </div>
         <div className="bio-content" >
           <div className="w3-third avi-container" >
-            <img id="self-portraint-main" className="avi-circle img-thumbnail mx-auto d-block" src={require("./../images/lifePics/me.jpeg")} alt="Self portrait at band practice" />
+            <img id="self-portrait-main" className="avi-circle img-thumbnail mx-auto d-block" src={require("./../images/lifePics/me.jpeg")} alt="Self portrait at band practice" />
           </div>
 
           <div className="w3-third avi-container" >
@@ -38,4 +38,6 @@ export default class Bio extends Component {
       </div>
     )
   }
+
+  executeScroll = () => this.myRef.current.scrollIntoView()
 }
