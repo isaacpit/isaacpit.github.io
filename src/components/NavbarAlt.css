@@ -4,7 +4,7 @@
 
 #navbar-brand-name, #link-to-band-page {
   color: #333;
-  font-size: large;
+  font-size: x-large;
   margin: 8px;
 }
 
@@ -16,6 +16,7 @@
 .navbar-link {
   color: gray;
   margin: 8px;
+  font-size: x-large;
 }
 
 .navbar-link:hover {
