@@ -276,7 +276,6 @@ class App extends Component {
           {/* LIVE */}
           <Route exact path="/" render={(props) => <Portfolio {...props} id="first" data={data}/>}/>
           <Route exact path="/portfolio-web" render={(props) => <Portfolio {...props} id="first" data={data}/>}/>
-          <Route exact path="/portfolio-web" render={(props) => <Portfolio {...props} id="first" data={data}/>}/>
           {/* NOT AS LIVE */}
           <Route path="/old" component={Home}/>
           <Route path="/about" component={About}/>
