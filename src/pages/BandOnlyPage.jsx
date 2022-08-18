@@ -3,12 +3,12 @@ import { MrKatTimeline } from "../components/ForFunTimeline";
 import NavbarAlt from '../components/NavbarAlt';
 import './BandOnlyPage.css';
 
-const ContactCard = ({href, text}) => {
+const ContactCard = ({href, text, src}) => {
   return (
       <a href={href} target="_blank">
         {/* <div className="col d-flex flex-row justify-content-center " style={{maxHeight: "inherit"}}> */}
           <div className = "d-flex flex-column align-items-center justify-content-center"> 
-            <img width="50px" height="50px" src={"https://img.icons8.com/color/100/000000/instagram-new--v1.png"} alt={"Instagram"}/>
+            <img width="50px" height="50px" src={src} alt={text}/>
             <p className="p-2">{text}</p>
           </div>
         {/* </div> */}
@@ -23,14 +23,22 @@ const Contact = ({bgColor, cardColor}) => {
         <div style={{backgroundColor: 'white'}} className="d-flex justify-content-center">
           <h3>Contact Us</h3>
         </div>
-        <p>Shoot us a DM on the band instagram page or email us at </p>
-        <b>mrkat.mp3 AT gmail DOT com</b>
+        <p>Shoot us a DM on the band instagram page or email us at <b>mrkat.mp3@gmail.com</b> </p>
+        
         <div className="d-flex justify-content-center align-items-center	" style={{backgroundColor: bgColor}}>
           {/* <div className="w3-card w3-padding-16	 d-flex flex-row align-items-center justify-content-center contact-card-container" style={{backgroundColor: cardColor}}> */}
             <ContactCard
-              text="Mr. Kat Band Instagram"
+              text="Band Page"
               href="https://www.instagram.com/mrkatband/"
+              src="https://img.icons8.com/color/100/000000/instagram-new--v1.png"
             />
+            <ContactCard
+              text="Email"
+              href={"mailto:mrkat.mp3@gmail.com"}  
+              src="https://img.icons8.com/fluency/100/000000/apple-mail.png"
+            >
+
+            </ContactCard>
         </div>
         
         
