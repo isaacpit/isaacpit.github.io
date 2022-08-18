@@ -1,0 +1,17 @@
+a {
+  color: black;
+  margin: 10px 20px;
+}
+a:hover {
+  text-decoration: none;
+}
+
+p, b {
+  max-width: 400px;
+  text-align: center;
+}
+
+.contact-card-container {
+  min-width: 400px;
+  min-height: 200px;
+}

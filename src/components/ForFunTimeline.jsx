@@ -25,7 +25,8 @@ export class MrKatTimeline extends Component {
     const {
       bgColor,
       cardColor,
-      caption
+      caption,
+      children
     } = this.props;
     return (
       <div className="w3-margin-bottom">
@@ -36,9 +37,14 @@ export class MrKatTimeline extends Component {
             <p className="description">
               {caption}
             </p>
+            
           }
+          {children}
           
           <div className="container">
+            <h3>
+              Demos
+            </h3>
             <div className="row justify-content-around">
               <CaptionVid src={require("./../images/lifePics/bastard.mov")} caption="bastard [demo]"/>
               <CaptionVid src={require("./../images/lifePics/redruM.mov")} caption="redrum [demo]"/>
