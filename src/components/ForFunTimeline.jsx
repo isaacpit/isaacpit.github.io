@@ -46,11 +46,13 @@ export class MrKatTimeline extends Component {
               Demos
             </h3>
             <div className="row justify-content-around">
-              <CaptionVid src={require("./../images/lifePics/bastard.mov")} caption="bastard [demo]"/>
-              <CaptionVid src={require("./../images/lifePics/redruM.mov")} caption="redrum [demo]"/>
-              <CaptionVid src={require("./../images/lifePics/teeth-solo.mov")} caption="teeth remote jam sesh"/>
-              <CaptionVid src={require("./../images/lifePics/u-mean-it.mov")} caption="u mean it [demo]"/>
-              <CaptionVid src={require("./../images/lifePics/teeth.mov")} caption="teeth duet w/ Kat"/>
+              <CaptionVid src={require("./../images/lifePics/vids/bastard.mov")} caption="bastard [demo]"/>
+              <CaptionVid src={require("./../images/lifePics/vids/redruM.mov")} caption="redrum [demo]"/>
+              <CaptionVid src={require("./../images/lifePics/vids/cream-cheese-rangoon-demo.mov")} caption="creem cheese rangoon [demo]"/>
+              <CaptionVid src={require("./../images/lifePics/vids/teeth-demo.mov")} caption="teeth [demo]"/>
+              <CaptionVid src={require("./../images/lifePics/vids/u-mean-it.mov")} caption="u mean it [demo]"/>
+              <CaptionVid src={require("./../images/lifePics/vids/teeth-solo.mov")} caption="teeth remote jam sesh"/>
+              <CaptionVid src={require("./../images/lifePics/vids/teeth.mov")} caption="teeth duet w/ Kat"/>
               <CaptionImg src={require("./../images/lifePics/mr-kat-sticker.jpg")} caption="Mr. Kat sticker"/>
               <CaptionImg src={require("./../images/lifePics/sticker-laptop.jpg")} caption="sticker's home"/>
             </div>
@@ -82,9 +84,9 @@ class BasketballTimeline extends Component {
           </p>
           <div className="container">
             <div className="row justify-content-around">
-              <CaptionVid src={require("./../images/lifePics/dunk1.mov")} caption="dunk #1"/>
-              <CaptionVid src={require("./../images/lifePics/dunk2.mov")} caption="dunk #2"/>
-              <CaptionVid src={require("./../images/lifePics/dunk3.mov")} caption="dunk #3"/>
+              <CaptionVid src={require("./../images/lifePics/vids/dunk1.mov")} caption="dunk #1"/>
+              <CaptionVid src={require("./../images/lifePics/vids/dunk2.mov")} caption="dunk #2"/>
+              <CaptionVid src={require("./../images/lifePics/vids/dunk3.mov")} caption="dunk #3"/>
             </div>
           </div>
         </div> 
