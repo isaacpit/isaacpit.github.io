@@ -51,6 +51,14 @@ export class MrKatTimeline extends Component {
               <CaptionVid src={require("./../images/lifePics/vids/redruM.mov")} caption="redrum [demo]"/>
               <CaptionVid src={require("./../images/lifePics/vids/bastard.mov")} caption="bastard [demo]"/>
               <CaptionVid src={require("./../images/lifePics/vids/u-mean-it.mov")} caption="u mean it [demo]"/>
+              
+            </div>
+          </div>
+          <div className="container">
+            <h3>
+              Extras
+            </h3>
+            <div className="row justify-content-around">
               <CaptionVid src={require("./../images/lifePics/vids/teeth-solo.mov")} caption="teeth remote jam sesh"/>
               <CaptionVid src={require("./../images/lifePics/vids/teeth.mov")} caption="teeth duet w/ Kat"/>
               <CaptionImg src={require("./../images/lifePics/mr-kat-sticker.jpg")} caption="Mr. Kat sticker"/>
