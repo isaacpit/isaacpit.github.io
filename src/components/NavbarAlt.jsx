@@ -8,7 +8,7 @@ const InPageAnchors = ({text, searchId, statePushUrl}) => {
 
   return (
     <a className="navbar-link"
-        href="/"
+        href="/portfolio-web"
         onClick={(e) => {
           let hero = document.getElementById(searchId);
           e.preventDefault();
