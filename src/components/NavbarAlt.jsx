@@ -8,7 +8,7 @@ const InPageAnchors = ({text, searchId, statePushUrl}) => {
 
   return (
     <a className="navbar-link"
-        href="/portfolio-web"
+        href={statePushUrl}
         onClick={(e) => {
           let hero = document.getElementById(searchId);
           e.preventDefault();
@@ -25,18 +25,19 @@ const InPageAnchors = ({text, searchId, statePushUrl}) => {
 const NavbarAlt = () => {
 
   const location = useLocation().pathname;
-  const IS_HOME = location == "/";
+  const HOME = "/#/portfolio-web"; // changed from being root so we could put on instagram. instagram doens't play nice w/ hash URLs ... 
+  const IS_HOME = location == "/portfolio-web";
   console.log("LOCATION=", location);
   console.log("IS_HOME=", IS_HOME);
 
 
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <a href="/">
+      <a href={HOME}>
         <img id="navbar-brand-logo" alt="mr-kat-band-logo" src={require("./../images/lifePics/mr-kat-logo.jpg")} /> 
       </a>
       
-      <a id="navbar-brand-name" className="navbar-brand" href="/">Isaac's Portfolio</a>
+      <a id="navbar-brand-name" className="navbar-brand" href={HOME}>Isaac's Portfolio</a>
       
       <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
@@ -54,22 +55,22 @@ const NavbarAlt = () => {
               <InPageAnchors 
                 text="About Me"
                 searchId="about-me-header"
-                statePushUrl="/"
+                statePushUrl={HOME}
               />
               <InPageAnchors 
                 text="Experience"
                 searchId="experience-header"
-                statePushUrl="/"
+                statePushUrl={HOME}
               />
               <InPageAnchors 
                 text="Portfolio"
                 searchId="portfolio-header"
-                statePushUrl="/"
+                statePushUrl={HOME}
               />
               <InPageAnchors 
                 text="After Hours"
                 searchId="for-fun-header"
-                statePushUrl="/"
+                statePushUrl={HOME}
               />
             
             </>
