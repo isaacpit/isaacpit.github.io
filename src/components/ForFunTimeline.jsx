@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
+import Constants from './constants/constant';
 import './ForFunTimeline.css';
 
 const Intro = (props) => {
   return (
     <div className="w3-margin-bottom">
       <div className="w3-card w3-padding-16	 d-flex flex-column align-items-center justify-content-center	" style={{backgroundColor: props.cardColor}}>
-        <img className="title-logo" src={require("./../images/lifePics/aud.jpeg")}></img>
+        <img className="title-logo" src={Constants.img.img_aud}></img>
         <h3 className="title">After Hours</h3>
         <p className="description">
           In my spare time I enjoy playing basketball, jamming with friends (I play the guitar), and lifting weights. I recently formed a band with some close friends and have some demos to share. We are also scheduled for our first show in September 2022. I also recently achieved a major goal basketball of getting a solid dunk thanks to strength training.
@@ -42,6 +43,21 @@ export class MrKatTimeline extends Component {
           {children}
           
           <div className="container">
+            <h3>BCS 101 Show - Sept 30th, 2022</h3>
+
+            <div className="row justify-content-around">
+              <CaptionVid src={require("./../images/lifePics/mr-kat-debut/bastard-end.mp4")} caption="bastard"/>
+              <CaptionVid src={require("./../images/lifePics/mr-kat-debut/bastard-mosh.mp4")} caption="bastard - mosh"/>
+              <CaptionVid src={require("./../images/lifePics/mr-kat-debut/cream-cheese-rangoon.mp4")} caption="cream cheese rangoon"/>
+              <CaptionVid src={require("./../images/lifePics/mr-kat-debut/wcc.mp4")} caption="working class clown"/>
+              <CaptionVid src={require("./../images/lifePics/mr-kat-debut/redrum.mp4")} caption="redrum"/>
+              <CaptionVid src={require("./../images/lifePics/mr-kat-debut/teeth-debut.mp4")} caption="teeth"/>
+              <CaptionVid src={require("./../images/lifePics/mr-kat-debut/u-mean-it.mp4")} caption="u mean it"/>
+
+              <CaptionImg src={require("./../images/lifePics/mr-kat-debut/mr-kat-at-101.jpeg")} caption="Mr. Kat @ 101"/>
+              <CaptionImg src={require("./../images/lifePics/mr-kat-debut/sydney-climbing.jpeg")} caption="risk it for the biscuit"/>
+            </div>
+
             <h3>
               Demos
             </h3>
