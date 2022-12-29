@@ -43,15 +43,41 @@ export class MrKatTimeline extends Component {
           {children}
           
           <div className="container">
+          <h3>BCS 101 Show - Dec 9th, 2022</h3>
+
+          <div className="row justify-content-around">
+            <CaptionVid src={require("./../images/lifePics/12-09-22-mr-kat-show/sandbox-love.mp4")} caption="sandbox love"/>
+            <CaptionVid src={require("./../images/lifePics/12-09-22-mr-kat-show/hrsb.mp4")} caption="hsrb x beach goons"/>
+            <CaptionVid src={require("./../images/lifePics/12-09-22-mr-kat-show/bastard.mp4")} caption="bastard"/>
+            <CaptionVid src={require("./../images/lifePics/12-09-22-mr-kat-show/ccr.mp4")} caption="cream cheese rangoon"/>
+            <CaptionVid src={require("./../images/lifePics/12-09-22-mr-kat-show/crowd.mov")} caption="pre-show"/>
+            <CaptionVid src={require("./../images/lifePics/12-09-22-mr-kat-show/teeth.mp4")} caption="teeth"/>
+
+            <CaptionImg src={require("./../images/lifePics/12-09-22-mr-kat-show/cover.jpeg")} caption="101 sign"/>
+            <CaptionImg src={require("./../images/lifePics/12-09-22-mr-kat-show/i-k-1.JPG")} caption="isaac"/>
+            <CaptionImg src={require("./../images/lifePics/12-09-22-mr-kat-show/k-v-j-1.JPG")} caption="isaac"/>
+            <CaptionImg src={require("./../images/lifePics/12-09-22-mr-kat-show/v-2.JPG")} caption="isaac"/>
+            <CaptionImg src={require("./../images/lifePics/12-09-22-mr-kat-show/i-1.JPG")} caption="isaac"/>
+            <CaptionImg src={require("./../images/lifePics/12-09-22-mr-kat-show/j-1.JPG")} caption="isaac"/>
+            <CaptionImg src={require("./../images/lifePics/12-09-22-mr-kat-show/k-1.JPG")} caption="isaac"/>
+            <CaptionImg src={require("./../images/lifePics/12-09-22-mr-kat-show/i-k-v-1.JPG")} caption="isaac"/>
+            <CaptionImg src={require("./../images/lifePics/12-09-22-mr-kat-show/v-k-1.JPG")} caption="isaac"/>
+            <CaptionImg src={require("./../images/lifePics/12-09-22-mr-kat-show/i-3.JPG")} caption="isaac"/>            
+            <CaptionImg src={require("./../images/lifePics/12-09-22-mr-kat-show/j-2.JPG")} caption="isaac"/>
+            <CaptionImg src={require("./../images/lifePics/12-09-22-mr-kat-show/i-k-3.JPG")} caption="isaac"/>
+            <CaptionImg src={require("./../images/lifePics/12-09-22-mr-kat-show/i-2.JPG")} caption="isaac"/>
+            <CaptionImg src={require("./../images/lifePics/12-09-22-mr-kat-show/j-3.JPG")} caption="isaac"/>
+            <CaptionImg src={require("./../images/lifePics/12-09-22-mr-kat-show/j-k-1.JPG")} caption="isaac"/>
+            
+          </div>
+
             <h3>BCS 101 Show - Sept 30th, 2022</h3>
 
             <div className="row justify-content-around">
               <CaptionVid src={require("./../images/lifePics/mr-kat-debut/bastard-end.mp4")} caption="bastard"/>
               <CaptionVid src={require("./../images/lifePics/mr-kat-debut/bastard-mosh.mp4")} caption="bastard - mosh"/>
-              <CaptionVid src={require("./../images/lifePics/mr-kat-debut/cream-cheese-rangoon.mp4")} caption="cream cheese rangoon"/>
               <CaptionVid src={require("./../images/lifePics/mr-kat-debut/wcc.mp4")} caption="working class clown"/>
               <CaptionVid src={require("./../images/lifePics/mr-kat-debut/redrum.mp4")} caption="redrum"/>
-              <CaptionVid src={require("./../images/lifePics/mr-kat-debut/teeth-debut.mp4")} caption="teeth"/>
               <CaptionVid src={require("./../images/lifePics/mr-kat-debut/u-mean-it.mp4")} caption="u mean it"/>
 
               <CaptionImg src={require("./../images/lifePics/mr-kat-debut/mr-kat-at-101.jpeg")} caption="Mr. Kat @ 101"/>
@@ -75,6 +101,7 @@ export class MrKatTimeline extends Component {
               Extras
             </h3>
             <div className="row justify-content-around">
+              <CaptionVid src={require("./../images/lifePics/vids/i cant win - double.mp4")} caption="i cant win x the strokes"/>
               <CaptionVid src={require("./../images/lifePics/vids/teeth-solo.mov")} caption="teeth remote jam sesh"/>
               <CaptionVid src={require("./../images/lifePics/vids/teeth.mov")} caption="teeth duet w/ Kat"/>
               <CaptionImg src={require("./../images/lifePics/mr-kat-sticker.jpg")} caption="Mr. Kat sticker"/>
